@@ -29,12 +29,12 @@ from JisooX.modules.connection import connect_button
 PM_START_TEXT = """
 Haii *{}*🌻
 
-Namaku *{}* aku adalah bot management group yang dapat membantu kamu untuk menjaga & mengontrol grup untuk mengelola grup kamu agar tetap aman
+Namaku *{}* aku adalah bot management group yang dapat membantu kamu untuk menjaga & mengontrol grup kamu, agar grup kamu tetap aman.
 
 Tekan » /help « untuk mengetahui semua fitur aku.
 
 Aku akan merasa sangat senang apabila kamu mau menambahkan aku ke grup kamu.
-Maintained by [{}](tg://user?id={})
+Maintained by [{}](tg://user?id={})🌻
 """
 
 
