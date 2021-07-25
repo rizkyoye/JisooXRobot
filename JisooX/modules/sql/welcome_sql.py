@@ -6,7 +6,7 @@ from JisooX.modules.helper_funcs.msg_types import Types
 from JisooX.modules.sql import SESSION, BASE
 
 DEFAULT_WELCOME = "Hei {first} selamat bergabung, apa kabar?🌻"
-DEFAULT_GOODBYE = "Mudah²an kita bakal ketemu kembali🌻"
+DEFAULT_GOODBYE = "mudah²an kita bisa berjumpa kembali🌻"
 
 class Welcome(BASE):
     __tablename__ = "welcome_pref2"
