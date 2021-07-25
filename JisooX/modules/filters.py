@@ -20,7 +20,7 @@ from JisooX.modules.sql import cust_filters_sql as sql
 from JisooX.modules.connection import connected
 
 HANDLER_GROUP = 10
-BASIC_FILTER_STRING = "*Filters in this chat:*\n"
+BASIC_FILTER_STRING = "*Filters yang ada di chat ini:*\n"
 
 
 @run_async
