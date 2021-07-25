@@ -48,8 +48,8 @@ the things I can help you with.
  🌻 - /help <module name>: PM's you info about that module.
  🌻 - /source: Information about my source.
  🌻 - /settings:
-   🔹 - in PM: will send you your settings for all supported modules.
-   🔹 - in a group: will redirect you to pm, with all that chat's settings.
+    - in PM: will send you your settings for all supported modules.
+    - in a group: will redirect you to pm, with all that chat's settings.
 {}
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
