@@ -27,14 +27,9 @@ from JisooX.modules.connection import connect_button
 
 
 PM_START_TEXT = """
-Haii *{}*🌻
-
-Namaku *{}* aku adalah bot management group yang dapat membantu kamu untuk menjaga & mengontrol grup kamu, agar grup kamu tetap aman.
-
-Tekan » /help « untuk mengetahui semua fitur aku.
-
-Aku akan merasa sangat senang apabila kamu mau menambahkan aku ke grup kamu.
-Maintained by [{}](tg://user?id={})🌻
+ʜᴀɪɪ, ɪ'ᴍ *{}*🌻
+ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs!ʜɪᴛ /help ᴛᴏ sᴇᴇ ᴀʟʟ ᴍʏ ғᴇᴀᴛᴜʀᴇs[.](https://telegra.ph/file/24aa5419412a3719726c6.jpg)
+ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ [{}](tg://user?id={})
 """
 
 
