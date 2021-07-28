@@ -27,7 +27,7 @@ from JisooX.modules.connection import connect_button
 
 
 PM_START_TEXT = """
-ʜᴀɪɪ,*{}*🌻
+ʜᴀɪɪ *{}*🌻
 ɪ'ᴍ *{}* ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs!ʜɪᴛ /help ᴛᴏ sᴇᴇ ᴀʟʟ ᴍʏ ғᴇᴀᴛᴜʀᴇs[🌻](https://telegra.ph/file/24aa5419412a3719726c6.jpg)
 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ [{}](tg://user?id={})
 """
@@ -168,8 +168,21 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅ",callback_data="help_back"),InlineKeyboardButton(text="ʙᴏᴛ ᴏᴡɴᴇʀ",url="https://t.me/rizexx")]]
-    keyboard += [[InlineKeyboardButton(text="ɢʀᴏᴜᴘ sᴜᴘᴘᴏʀᴛ",url="https://t.me/nyanyiisinii"),InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ?",url="t.me/{}?startgroup=true".format(bot.username))]]
+    buttons = [
+    [
+        InlineKeyboardButton(
+            text="➕️ ᴀᴅᴅ ᴀʟɪɴᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/{}startgroup=true".format(bot.username)),
+    ],
+    [
+        InlineKeyboardButton(text="ɢʀᴏᴜᴘ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/nyanyiisinii"),
+        InlineKeyboardButton(
+            text="ᴏᴡɴᴇʀ ʙᴏᴛ", url=f"https://t.me/rizexx"
+        ),
+    ],
+    [
+        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
+    ],
+]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
                                          reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
