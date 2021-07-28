@@ -168,7 +168,7 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    buttons = [
+    keyboard = [
     [
         InlineKeyboardButton(
             text="➕️ ᴀᴅᴅ ᴀʟɪɴᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/{}startgroup=true".format(bot.username)),
