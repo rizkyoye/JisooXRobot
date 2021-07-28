@@ -235,7 +235,7 @@ __help__ = """
 - /q : create sticker quotly
 """
 
-__mod_name__ = "STICKERS"
+__mod_name__ = "sᴛɪᴄᴋᴇʀs"
 STICKERID_HANDLER = DisableAbleCommandHandler("stickerid", stickerid)
 GETSTICKER_HANDLER = DisableAbleCommandHandler("getsticker", getsticker)
 STEAL_HANDLER = DisableAbleCommandHandler("steal", steal, pass_args=True, admin_ok=False)
