@@ -64,14 +64,14 @@ class AioHttp:
                 return await resp.read()
 
 
-__mod_name__ = "Inline"
+__mod_name__ = "ɪɴʟɪɴᴇ"
 __help__ = """
  <b> INLINE BOT SERVICE OF @JisooXRobot </b> 
  
 <i> I'm more efficient when added as group admin. By the way these commands can be used by anyone in a group via inline.</i>
 
 <b>Syntax</b>
-   @JisooXRobot [command] [query]
+   @alinaexbot [command] [query]
 
 <b> Commands Available</b>
 - alive - Check Bot's Stats.
