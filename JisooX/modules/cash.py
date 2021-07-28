@@ -43,5 +43,5 @@ CONVERTER_HANDLER = CommandHandler('cash', convert)
 
 dispatcher.add_handler(CONVERTER_HANDLER)
 
-__command_list__ = ["cash"]
+__command_list__ = ["ᴄᴀsʜ"]
 __handlers__ = [CONVERTER_HANDLER]
