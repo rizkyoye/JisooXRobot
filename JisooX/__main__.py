@@ -171,7 +171,7 @@ def send_start(bot, update):
     keyboard = [
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ ᴀʟɪɴᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/{}startgroup=true".format(bot.username)),
+            text="➕️ ᴀᴅᴅ ᴀʟɪɴᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/{}?startgroup=true".format(bot.username)),
     ],
     [
         InlineKeyboardButton(text="ɢʀᴏᴜᴘ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/nyanyiisinii"),
