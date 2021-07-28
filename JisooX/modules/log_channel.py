@@ -183,7 +183,7 @@ if is_module_loaded(FILENAME):
     - sending /setlog in the channel
     - forwarding the /setlog to the group
     """ 
-    __mod_name__ = "LOG"
+    __mod_name__ = "ʟᴏɢ"
   
     LOG_HANDLER = CommandHandler("logchannel", logging)
     SET_LOG_HANDLER = CommandHandler("setlog", setlog)
