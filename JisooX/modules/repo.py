@@ -24,4 +24,4 @@ __help__ = """
  ❍ /repos*:* To Get My Github Repository Link And Support Group Link
 """
 
-__mod_name__ = "REPO"
+__mod_name__ = "ʀᴇᴘᴏ"
