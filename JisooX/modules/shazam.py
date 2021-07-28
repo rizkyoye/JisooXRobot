@@ -53,7 +53,7 @@ async def shazamm(client, message):
     await kek.delete()
 
 
-__mod_name__ = "Shazam"
+__mod_name__ = "sʜᴀᴢᴀᴍ"
 __help__ = """
 *SHAZAMMER*:
 Find any song with it's music or part of song
