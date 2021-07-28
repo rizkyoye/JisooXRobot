@@ -210,25 +210,26 @@ clock_ani = [
 
 
 
-earth_ani = [
-            "🌍",
-            "🌎",
-            "🌏",
-            "🌍",
-            "🌎",
-            "🌏",
-            "🌍",
-            "🌎",
-            "🌏",
-            "🌍",
-            "🌎",
-            "🌏",
-            "🌍",
-            "🌎",
-            "🌏",
-            "🌍",
-            "🌎",
-            "🌏"
+coli_ani = [
+            "8✊===D",
+            "8=✊==D",
+            "8==✊=D",
+            "8===✊D",
+            "8==✊=D",
+            "8=✊==D",
+            "8✊===D",
+            "8=✊==D",
+            "8==✊=D",
+            "8===✊D",
+            "8==✊=D",
+            "8=✊==D",
+            "8✊===D",
+            "8=✊==D",
+            "8==✊=D",
+            "8===✊D",
+            "8===✊D💦",
+            "8====D💦💦",
+            "**CROOTTTT AHH MANTAP**"
 ]
 
 
@@ -257,12 +258,12 @@ def clockanimation(bot: Bot, update: Update):
 
 @user_admin
 @run_async
-def earthanimation(bot: Bot, update: Update):
-    msg = update.effective_message.reply_text('🌏') 
+def coli(bot: Bot, update: Update):
+    msg = update.effective_message.reply_text('💦') 
     for x in range(EDIT_TIMES):
-        msg.edit_text(earth_ani[x%18])
+        msg.edit_text(coli_ani[x%18])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text('🌍')
+    msg.edit_text('💦')
 
 
 
@@ -349,7 +350,7 @@ __help__ = """
 - /bombs 💣
 - /moonanimation 🌚
 - /clockanimation 🕛
-- /earthanimation 🌍
+- /coli 
 - /blockanimation 🟥
 - /kill ⚰
 - /police 🚓
@@ -368,12 +369,12 @@ dispatcher.add_handler(KILL_HANDLER)
 dispatcher.add_handler(LOVE_HANDLER)
 dispatcher.add_handler(HACK_HANDLER)
 dispatcher.add_handler(BOMBS_HANDLER)
-dispatcher.add_handler(EARTHANIMATION_HANDLER)
+dispatcher.add_handler(COLI_HANDLER)
 dispatcher.add_handler(MOONANIMATION_HANDLER)
 dispatcher.add_handler(CLOCKANIMATION_HANDLER)
 dispatcher.add_handler(BLOCKANIMATION_HANDLER)
 
 
 __mod_name__ = "ᴇᴍᴏᴊɪs"
-__command_list__ = ["love", "hack", "bombs", "moonanimation", "clockanimation", "earthanimation", "blockanimation", "kill"]
-__handlers__ = [LOVE_HANDLER, HACK_HANDLER, BOMBS_HANDLER, MOONANIMATION_HANDLER, CLOCKANIMATION_HANDLER, EARTHANIMATION_HANDLER, BLOCKANIMATION_HANDLER, KILL_HANDLER]
+__command_list__ = ["love", "hack", "bombs", "moonanimation", "clockanimation", "coli", "blockanimation", "kill"]
+__handlers__ = [LOVE_HANDLER, HACK_HANDLER, BOMBS_HANDLER, MOONANIMATION_HANDLER, CLOCKANIMATION_HANDLER, COLI_HANDLER, BLOCKANIMATION_HANDLER, KILL_HANDLER]
