@@ -39,6 +39,6 @@ def tts(bot: Bot, update: Update, args):
 __help__ = """ Text to speech
 - /tts <your text>
 """
-__mod_name__ = "TTS"
+__mod_name__ = "ᴛᴛs"
 
 dispatcher.add_handler(CommandHandler('tts', tts, pass_args=True))
