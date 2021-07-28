@@ -39,7 +39,7 @@ EDIT_TIMES = 10
 
 
 
-#sleep how many times after each edit in 'earthanimation' 
+#sleep how many times after each edit in 'coli' 
 EDIT_SLEEP = 1
 #edit how many times in 'earthanimation' 
 EDIT_TIMES = 18
@@ -364,7 +364,7 @@ BOMBS_HANDLER = DisableAbleCommandHandler("bombs",bombs)
 MOONANIMATION_HANDLER =DisableAbleCommandHandler("moonanimation",moonanimation)
 CLOCKANIMATION_HANDLER =DisableAbleCommandHandler("clockanimation",clockanimation)
 BLOCKANIMATION_HANDLER =DisableAbleCommandHandler("blockanimation",blockanimation)
-EARTHANIMATION_HANDLER =DisableAbleCommandHandler("earthanimation",earthanimation)
+COLI_HANDLER =DisableAbleCommandHandler("coli",coli)
 dispatcher.add_handler(KILL_HANDLER)
 dispatcher.add_handler(LOVE_HANDLER)
 dispatcher.add_handler(HACK_HANDLER)
