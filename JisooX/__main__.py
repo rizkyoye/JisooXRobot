@@ -28,7 +28,7 @@ from JisooX.modules.connection import connect_button
 
 PM_START_TEXT = """
 ʜᴀɪɪ, ɪ'ᴍ *{}*🌻
-ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs!ʜɪᴛ /help ᴛᴏ sᴇᴇ ᴀʟʟ ᴍʏ ғᴇᴀᴛᴜʀᴇs[.](https://telegra.ph/file/24aa5419412a3719726c6.jpg)
+ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs!ʜɪᴛ /help ᴛᴏ sᴇᴇ ᴀʟʟ ᴍʏ ғᴇᴀᴛᴜʀᴇs[🌻](https://telegra.ph/file/24aa5419412a3719726c6.jpg)
 ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ [{}](tg://user?id={})
 """
 
