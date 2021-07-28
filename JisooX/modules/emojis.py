@@ -259,11 +259,11 @@ def clockanimation(bot: Bot, update: Update):
 @user_admin
 @run_async
 def coli(bot: Bot, update: Update):
-    msg = update.effective_message.reply_text('💦') 
+    msg = update.effective_message.reply_text('(_)(_)::::D') 
     for x in range(EDIT_TIMES):
-        msg.edit_text(coli_ani[x%18])
+        msg.edit_text(coli_ani[x%19])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text('💦')
+    msg.edit_text('(_)(_)::::D')
 
 
 
