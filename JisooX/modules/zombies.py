@@ -160,4 +160,4 @@ __help__ = """
  ❍ /zombies clean: To delete all deleted accounts in the.
 """
 
-__mod_name__ = "ZOMBIES"
+__mod_name__ = "ᴢᴏᴍʙɪᴇs"
