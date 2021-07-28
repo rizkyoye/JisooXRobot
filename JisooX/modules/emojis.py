@@ -41,13 +41,13 @@ EDIT_TIMES = 10
 
 #sleep how many times after each edit in 'coli' 
 EDIT_SLEEP = 1
-#edit how many times in 'earthanimation' 
+#edit how many times in 'coli' 
 EDIT_TIMES = 18
 
 
 #sleep how many times after each edit in 'gatau' 
 EDIT_SLEEP = 1
-#edit how many times in 'moonanimation' 
+#edit how many times in 'gatau' 
 EDIT_TIMES = 32
 
 
@@ -273,7 +273,7 @@ def coli(bot: Bot, update: Update):
 def gatau(bot: Bot, update: Update):
     msg = update.effective_message.reply_text('gatau asal inimah') 
     for x in range(EDIT_TIMES):
-        msg.edit_text(moon_ani[x%32])
+        msg.edit_text(gatau_ani[x%32])
         time.sleep(EDIT_SLEEP)
     msg.edit_text('🛌')
 
@@ -361,7 +361,7 @@ KILL_HANDLER = DisableAbleCommandHandler("kill",kill)
 LOVE_HANDLER = DisableAbleCommandHandler("love", love)
 HACK_HANDLER = DisableAbleCommandHandler("hack", hack)
 BOMBS_HANDLER = DisableAbleCommandHandler("bombs",bombs)
-GATAU_HANDLER =DisableAbleCommandHandler("moonanimation",moonanimation)
+GATAU_HANDLER =DisableAbleCommandHandler("gatau",gatau)
 CLOCKANIMATION_HANDLER =DisableAbleCommandHandler("clockanimation",clockanimation)
 BLOCKANIMATION_HANDLER =DisableAbleCommandHandler("blockanimation",blockanimation)
 COLI_HANDLER =DisableAbleCommandHandler("coli",coli)
@@ -370,7 +370,7 @@ dispatcher.add_handler(LOVE_HANDLER)
 dispatcher.add_handler(HACK_HANDLER)
 dispatcher.add_handler(BOMBS_HANDLER)
 dispatcher.add_handler(COLI_HANDLER)
-dispatcher.add_handler(MOONANIMATION_HANDLER)
+dispatcher.add_handler(GATAU_HANDLER)
 dispatcher.add_handler(CLOCKANIMATION_HANDLER)
 dispatcher.add_handler(BLOCKANIMATION_HANDLER)
 
