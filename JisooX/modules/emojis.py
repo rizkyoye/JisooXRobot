@@ -45,7 +45,7 @@ EDIT_SLEEP = 1
 EDIT_TIMES = 18
 
 
-#sleep how many times after each edit in 'moonanimation' 
+#sleep how many times after each edit in 'gatau' 
 EDIT_SLEEP = 1
 #edit how many times in 'moonanimation' 
 EDIT_TIMES = 32
@@ -151,39 +151,39 @@ bomb_ettu = [
 
 
 
-moon_ani = [
-            "🌗",
-            "🌘",    
-            "🌑",
-            "🌒",
-            "🌓",
-            "🌔",
-            "🌕",
-            "🌖",
-            "🌗",
-            "🌘",    
-            "🌑",
-            "🌒",
-            "🌓",
-            "🌔",
-            "🌕",
-            "🌖",
-            "🌗",
-            "🌘",    
-            "🌑",
-            "🌒",
-            "🌓",
-            "🌔",
-            "🌕",
-            "🌖",
-            "🌗",
-            "🌘",    
-            "🌑",
-            "🌒",
-            "🌓",
-            "🌔",
-            "🌕",
-            "🌖"
+gatau_ani = [
+            "🚶",
+            " 🚶",    
+            "  🚶",
+            "   🚶",
+            "  🚴_  🚶",
+            " 🚴_  🚶 ",
+            "🚴_  🏇=",
+            " 🚴_🏇=",
+            "🚴_🏇=",
+            "🏇_ 🚴=",    
+            "🏇=   🚴_",
+            " 🏇=      🚴_",
+            "   🏇_     🤸",
+            "     🏇_   ✨",
+            "    🏇_    🏎️_",
+            "  🏇_  🏎️_",
+            "🏇_🏎️_",
+            "🏎️💨     🏇_",    
+            "🏎️_       ✨",
+            " 🏎️_    🚁",
+            "  🏎️_ 🚁💨",
+            "    🏎️_🚁",
+            "      💢",
+            "       🔥",
+            "       🔥",
+            " 👩‍👩‍👧👩‍👩‍👧‍👦👩‍👩‍👦 🚑",    
+            "  🚑_",
+            " 🚑_",
+            "🚑_",
+            "👩‍🎨",
+            "🛌",
+            "🛌"
  ]
 
 
@@ -259,23 +259,23 @@ def clockanimation(bot: Bot, update: Update):
 @user_admin
 @run_async
 def coli(bot: Bot, update: Update):
-    msg = update.effective_message.reply_text('(_)(_)::::D') 
+    msg = update.effective_message.reply_text('(_)(_)::::D💦💦') 
     for x in range(EDIT_TIMES):
         msg.edit_text(coli_ani[x%19])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text('(_)(_)::::D')
+    msg.edit_text('(_)(_)::::D💦')
 
 
 
 
 @user_admin
 @run_async
-def moonanimation(bot: Bot, update: Update):
-    msg = update.effective_message.reply_text('🌚') 
+def gatau(bot: Bot, update: Update):
+    msg = update.effective_message.reply_text('gatau asal inimah') 
     for x in range(EDIT_TIMES):
         msg.edit_text(moon_ani[x%32])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text('🌙')
+    msg.edit_text('🛌')
 
 
 
@@ -348,7 +348,7 @@ __help__ = """
 - /love ❣️
 - /hack 👨‍💻
 - /bombs 💣
-- /moonanimation 🌚
+- /gatau
 - /clockanimation 🕛
 - /coli 
 - /blockanimation 🟥
@@ -361,7 +361,7 @@ KILL_HANDLER = DisableAbleCommandHandler("kill",kill)
 LOVE_HANDLER = DisableAbleCommandHandler("love", love)
 HACK_HANDLER = DisableAbleCommandHandler("hack", hack)
 BOMBS_HANDLER = DisableAbleCommandHandler("bombs",bombs)
-MOONANIMATION_HANDLER =DisableAbleCommandHandler("moonanimation",moonanimation)
+GATAU_HANDLER =DisableAbleCommandHandler("moonanimation",moonanimation)
 CLOCKANIMATION_HANDLER =DisableAbleCommandHandler("clockanimation",clockanimation)
 BLOCKANIMATION_HANDLER =DisableAbleCommandHandler("blockanimation",blockanimation)
 COLI_HANDLER =DisableAbleCommandHandler("coli",coli)
@@ -376,5 +376,5 @@ dispatcher.add_handler(BLOCKANIMATION_HANDLER)
 
 
 __mod_name__ = "ᴇᴍᴏᴊɪs"
-__command_list__ = ["love", "hack", "bombs", "moonanimation", "clockanimation", "coli", "blockanimation", "kill"]
-__handlers__ = [LOVE_HANDLER, HACK_HANDLER, BOMBS_HANDLER, MOONANIMATION_HANDLER, CLOCKANIMATION_HANDLER, COLI_HANDLER, BLOCKANIMATION_HANDLER, KILL_HANDLER]
+__command_list__ = ["love", "hack", "bombs", "gatau", "clockanimation", "coli", "blockanimation", "kill"]
+__handlers__ = [LOVE_HANDLER, HACK_HANDLER, BOMBS_HANDLER, GATAU_HANDLER, CLOCKANIMATION_HANDLER, COLI_HANDLER, BLOCKANIMATION_HANDLER, KILL_HANDLER]
