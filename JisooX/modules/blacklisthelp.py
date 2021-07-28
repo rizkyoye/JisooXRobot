@@ -24,4 +24,4 @@ Note:
  - `<sticker link>` can be `https://t.me/addstickers/<sticker>` or just `<sticker>` or reply to the sticker message.
 """
 
-__mod_name__ = "BLACKLIST"
+__mod_name__ = "ʙʟᴀᴄᴋʟɪsᴛ"
