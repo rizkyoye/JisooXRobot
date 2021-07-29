@@ -5,7 +5,7 @@ import textwrap
 import bs4
 import jikanpy
 import requests
-from JisooX import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
+from JisooX import DEV_USERS, OWNER_ID, WORKERS, dispatcher
 from JisooX.modules.disable import DisableAbleCommandHandler
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
