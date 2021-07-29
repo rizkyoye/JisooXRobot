@@ -8,7 +8,6 @@ import requests
 from JisooX import dispatcher
 from JisooX.modules.disable import DisableAbleCommandHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update, Message
-from telegram.ext import CallbackContext, run_async
 
 info_btn = "More Information"
 kaizoku_btn = "Kaizoku ☠️"
