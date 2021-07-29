@@ -5,7 +5,7 @@ import youtube_dl
 
 from pyrogram import filters
 from JisooX.utils import progress
-from youtube_search import YoutubeSearch
+from youtube_dl import YoutubeDL
 
 
 
