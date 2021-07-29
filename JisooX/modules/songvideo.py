@@ -255,4 +255,4 @@ async def download_video(v_url):
         await rkp.delete()
 
 
-__mod_name__ = "Music"
+__mod_name__ = "sᴏɴɢ"
