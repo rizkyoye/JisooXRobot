@@ -4,7 +4,7 @@ import aiohttp
 import youtube_dl
 
 from pyrogram import filters
-from JisooX import pgram
+from JisooX.utils import progress
 from youtube_search import YoutubeSearch
 
 
