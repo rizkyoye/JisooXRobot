@@ -1,45 +1,24 @@
-# Created by @p_rinc_e
-from pathlib import Path
-import asyncio, time, io, math, os, logging, asyncio, shutil, re, subprocess, json
-from re import findall
-from asyncio import sleep
-from telethon.events import NewMessage
-from telethon.tl.custom import Dialog
-from datetime import datetime as dt
-from pytz import country_names as c_n, country_timezones as c_tz, timezone as tz
-from hachoir.parser import createParser
-import pybase64
-from base64 import b64decode
-from pySmartDL import SmartDL
-from telethon.tl.types import DocumentAttributeVideo, DocumentAttributeAudio
-from telethon import events
+import asyncio
+import time
+import os
+import json
+from telethon.tl.types import DocumentAttributeAudio
 from JisooX.events import register
 from JisooX.utils import progress
-from telethon.errors.rpcerrorlist import YouBlockedUserError
-from telethon.tl.functions.messages import ImportChatInviteRequest as Get
-from validators.url import url
-from html import unescape
-from urllib.error import HTTPError
-import bs4
-from bs4 import BeautifulSoup
 from youtube_dl import YoutubeDL
-
 from youtube_dl.utils import (DownloadError, ContentTooShortError,
 
                               ExtractorError, GeoRestrictedError,
                               MaxDownloadsReached, PostProcessingError,
                               UnavailableVideoError, XAttrMetadataError)
-
 try:
-
    from youtubesearchpython import SearchVideos 
 
 except:
 	os.system("pip install pip install youtube-search-python")
 	from youtubesearchpython import SearchVideos 
-	pass
 
-@register(pattern="^/song (.*)")
+#@register(pattern="^/song (.*)")
 async def download_video(v_url):
 
     lazy = v_url ; sender = await lazy.get_sender() ; me = await lazy.client.get_me()
@@ -126,9 +105,9 @@ async def download_video(v_url):
         return
     c_time = time.time()
     if song:
-        await rkp.edit(f"`bersiap untuk di download, sabar ya🌻:`\
+        await rkp.edit(f"`Preparing to upload song:`\
         \n**{rip_data['title']}**\
-        \nUploaded by @rizexx")
+        \nby *{rip_data['uploader']}*")
         await v_url.client.send_file(
             v_url.chat_id,
             f"{rip_data['id']}.mp3",
@@ -144,9 +123,9 @@ async def download_video(v_url):
                          f"{rip_data['title']}.mp3")))
         os.remove(f"{rip_data['id']}.mp3")
     elif video:
-        await rkp.edit(f"`bersiap untuk mendownload lagu :`\
+        await rkp.edit(f"`Preparing to upload song :`\
         \n**{rip_data['title']}**\
-        \nUploaded by @rizexx")
+        \nby *{rip_data['uploader']}*")
         await v_url.client.send_file(
             v_url.chat_id,
             f"{rip_data['id']}.mp4",
@@ -159,7 +138,7 @@ async def download_video(v_url):
         os.remove(f"{rip_data['id']}.mp4")
 
 
-@register(pattern="^/video (.*)")
+# @register(pattern="^/video (.*)")
 async def download_video(v_url):  
     lazy = v_url ; sender = await lazy.get_sender() ; me = await lazy.client.get_me()
     if not sender.id == me.id:
@@ -274,10 +253,6 @@ async def download_video(v_url):
                          f"{rip_data['title']}.mp4")))
         os.remove(f"{rip_data['id']}.mp4")
         await rkp.delete()
-__help__ = """		  
- - /song <songname artist(optional)>: uploads the song in it's best quality available
- - /video <songname artist(optional)>: uploads the video song in it's best quality available
- - /lyrics <song>: returns the lyrics of that song.
-"""
 
-__mod_name__ = "sᴏɴɢ"
+
+__mod_name__ = "Music"
