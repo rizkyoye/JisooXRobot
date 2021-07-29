@@ -69,8 +69,6 @@ TELEGRAPH_MEDIA_LINKS = ["https://telegra.ph/file/e354ce72d5cc6a1d27c4d.jpg",
                          "https://telegra.ph/file/39f7b5d1d7a3487f6ba69.jpg"
                          ]
 
-Commands Available -
-
 • `{i}logo <text>`
    Generate a logo of the given Text
    Or Reply To image , to write ur text on it.
