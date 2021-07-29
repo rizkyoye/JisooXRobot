@@ -1,6 +1,6 @@
-from YoneRobot.events import register
-from YoneRobot import OWNER_ID
-from YoneRobot import telethn as tbot
+from JisooX.events import register
+from JisooX import OWNER_ID
+from JisooX import telethn as tbot
 import os 
 from PIL import Image, ImageDraw, ImageFont
 
