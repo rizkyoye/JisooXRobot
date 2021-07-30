@@ -27,15 +27,15 @@ from JisooX.modules.connection import connect_button
 
 
 PM_START_TEXT = """
-ʜᴀɪɪ *{}*🌻
-ɪ'ᴍ *{}* ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs!ʜɪᴛ /help ᴛᴏ sᴇᴇ ᴀʟʟ ᴍʏ ғᴇᴀᴛᴜʀᴇs[🌻](https://telegra.ph/file/24aa5419412a3719726c6.jpg)
-ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ [{}](tg://user?id={})
+`ʜᴀɪɪ` *{}*🌻
+`ɪ'ᴍ` *{}* `ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘs!ʜɪᴛ` /help `ᴛᴏ sᴇᴇ ᴀʟʟ ᴍʏ ғᴇᴀᴛᴜʀᴇs`[🌻](https://telegra.ph/file/24aa5419412a3719726c6.jpg)
+`ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ` [{}](tg://user?id={})
 """
 
 
 HELP_STRINGS = """
-ʜɪ, ɪ'ᴍ ᴀʟɪɴᴀ
-ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ[🌻](https://telegra.ph/file/8b913a58af3c145445473.jpg)
+`ʜɪ`, `ɪ'ᴍ ᴀʟɪɴᴀ`
+`ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ`[🌻](https://telegra.ph/file/8b913a58af3c145445473.jpg)
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 
