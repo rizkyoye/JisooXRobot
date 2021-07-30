@@ -23,6 +23,16 @@
          "value": "",
          "required": true
       },
+      "BOT_ID": {
+         "description": "Your bot ID.. Use any other bot to get it.",
+         "required": true,
+         "value": ""
+      },
+      "MONGO_DB_URI": {
+         "description": "Required for database connections.",
+         "required": false,
+         "value": ""
+      },
       "HEROKU_API_KEY": {
         "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
         "value": ""
@@ -34,14 +44,10 @@
       "REM_BG_API_KEY": {
          "description": "Enter the Remove Background Api key.",
          "required": false,
-         "value": ""
+         "value": "dxsh728mZMDmj4ijSZCNPZig"
       },
       "BOT_USERNAME": {
          "description": "Enter You bot username.",
-         "value": ""
-      },
-      "ARQ_API_KEY": {
-         "description": "Enter You arq api key.",
          "value": ""
       },
       "BAN_STICKER": {
@@ -94,11 +100,11 @@
       "CASH_API_KEY": {
          "description": "Required for currency converter",
          "required": false,
-         "value": "-xyz"
+         "value": "V7NS1NBFEL4X24L6"
       },
       "TIME_API_KEY": {
          "description": "Required for timezone information",
-         "value": "-xyz"
+         "value": "2AS711XS1O9B"
       },
        "LASTFM_API_KEY": {
          "description": "Required for lastfm plugin",
@@ -165,7 +171,7 @@
       "LYDIA_API": {
          "description": "Put here lydia API.",
          "required": false,
-         "value": " " 
+         "value": "632740cd2395c73b58275b54ff57a02b607a9f8a4bbc0e37a24e7349a098f95eaa6569e22e2d90093e9c1a9cc253380a218bfc2b7af2e407494502f6fb76f97e" 
       }
    },
    "keywords": [
@@ -184,8 +190,8 @@
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     }
   ],
-   "name": "Alina-ex",
-   "repository": "https://github.com/rizkyoye/alina-robot",
-   "success_url": "https://telegram.dog/alinaexbot",
-   "logo": "https://telegra.ph/file/1d8b2fd6e15cd436b90d9.jpg"
+   "name": "JisooX",
+   "repository": "https://github.com/ferikunn/JisooX",
+   "success_url": "https://telegram.dog/JisoXRobot",
+   "logo": "https://telegra.ph/file/c4c66449d0dfcf5f24b50.jpg"
 }
