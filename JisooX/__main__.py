@@ -174,7 +174,7 @@ def send_start(bot, update):
             text="➕️ ᴀᴅᴅ ᴀʟɪɴᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/{}?startgroup=true".format(bot.username)),
     ],
     [
-        InlineKeyboardButton(text="ɢʀᴏᴜᴘ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/nyanyiisinii"),
+        InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/rizexproject"),
         InlineKeyboardButton(
             text="ᴏᴡɴᴇʀ ʙᴏᴛ", url=f"https://t.me/rizexx"
         ),
