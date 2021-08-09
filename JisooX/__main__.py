@@ -27,26 +27,16 @@ from JisooX.modules.connection import connect_button
 
 
 PM_START_TEXT = """
-_Hello_ *{}*
-_My name is_ *{}*\n_A Powerful Telegram ProBot to Manage Your Groups,feel free to add to your groups!!_
-_Maintained by_ [{}](tg://user?id={})
+_ʜᴀʟᴏ_ *{}*
+_ɴᴀᴍᴀ ɢᴜᴀ_ * {} * \ n_ᴀ ᴘʀᴏʙᴏᴛ ᴛᴇʟᴇɢʀᴀᴍ ʏᴀɴɢ ᴋᴜᴀᴛ ᴜɴᴛᴜᴋ ᴍᴇɴɢᴇʟᴏʟᴀ ɢʀᴜᴘ ᴀɴᴅᴀ ᴅᴀɴ ᴜɴᴛᴜᴋ ᴍᴇɴʏᴀʟᴀᴋᴀɴ ʟᴀɢᴜ ᴅɪ ᴠᴄɢ ᴊᴀɴɢᴀɴ ʀᴀɢᴜ ᴜɴᴛᴜᴋ ᴍᴇɴᴀᴍʙᴀʜ ᴋᴇ ɢʀᴜᴘ ᴀɴᴅᴀ !! _
+_ᴍᴀɪɴᴛᴇɴᴇᴅ ʙʏ_ [{}] (tg: // user? id = {})
+""
 """
 
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm a modular group management bot with a few fun extras! Have a look at the following for an idea of some of \
-the things I can help you with.
-*Main* commands available:
- 💠 - /start: start the bot
- 💠 - /help: PM's you this message.
- 💠 - /help <module name>: PM's you info about that module.
- 💠 - /source: Information about my source.
- 💠 - /settings:
-   🔹 - in PM: will send you your settings for all supported modules.
-   🔹 - in a group: will redirect you to pm, with all that chat's settings.
-{}
-And the following:
+ʜᴀʟᴏ ɢᴜᴀ *{}*
+ʙᴏᴛ ɪɴɪ ᴜɴᴛᴜᴋ ᴍᴀɴᴀɢᴇʀ ɢʀᴜᴘ ᴅᴀɴ ᴍᴜsɪᴋ ʏᴀ, ɢᴀʙᴜᴛ ᴅᴏᴀɴɢ ɢᴜᴀ. ᴊᴀᴅɪ ʙᴜᴀᴛ ɢɪɴɪᴀɴ (https://telegra.ph/file/3a622f66018a4f603762d.jpg)
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 
@@ -58,8 +48,8 @@ def vercheck() -> str:
 
 
 SOURCE_STRING = """
-⚡I'm built in python3, using the python-telegram-bot library, and am fully opensource - you can find what makes me tick [here](https://github.com/feriexp/JisooXRobot)
-⚡You Can Clone Me [Here](https://heroku.com/deploy?template=https://github.com/feriexp/JisooXRobot.git)
+⚡ɪ'ᴍ ʙᴜɪʟᴛ ɪɴ ᴘʏᴛʜᴏɴ3, ᴜsɪɴɢ ᴛʜᴇ ᴘʏᴛʜᴏɴ-ᴛᴇʟᴇɢʀᴀᴍ-ʙᴏᴛ ʟɪʙʀᴀʀʏ, ᴀɴᴅ ᴀᴍ ꜰᴜʟʟʏ ᴏᴘᴇɴsᴏᴜʀᴄᴇ - ʏᴏᴜ ᴄᴀɴ ꜰɪɴᴅ ᴡʜᴀᴛ ᴍᴀᴋᴇs ᴍᴇ ᴛɪᴄᴋ [here](https://github.com/jjorvax/vaxzrobot)
+⚡You Can Clone Me [Here](https://heroku.com/deploy?template=https://github.com/jjorvax/vaxzrobot.git)
 """
 
 
@@ -179,8 +169,8 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
-    keyboard = [[InlineKeyboardButton(text="[► Help ◄]",callback_data="help_back"),InlineKeyboardButton(text="[► Creator ◄]",url="https://t.me/xflicks")]]
-    keyboard += [[InlineKeyboardButton(text="[► Source ◄]",url="https://github.com/FeriEXP/JisooXRobot"),InlineKeyboardButton(text="[► Add Me ◄]",url="t.me/{}?startgroup=true".format(bot.username))]]
+    keyboard = [[InlineKeyboardButton(text="[► ʜᴇʟᴘ ◄]",callback_data="help_back"),InlineKeyboardButton(text="[► ᴄʀᴇᴀᴛᴏʀ ◄]",url="https://t.me/jjorvaxeskopeace")]]
+    keyboard += [[InlineKeyboardButton(text="[► ɢʀᴏᴜᴘ ◄]",url="https://t.me/FamilyRuthless"),InlineKeyboardButton(text="[► ᴀᴅᴅ ᴍᴇ ◄]",url="t.me/{}?startgroup=true".format(bot.username))]]
 
     update.effective_message.reply_photo(img, PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_NAME, OWNER_ID), 
                                          reply_markup=InlineKeyboardMarkup(keyboard), disable_web_page_preview=True, parse_mode=ParseMode.MARKDOWN)
@@ -280,8 +270,8 @@ def get_help(bot: Bot, update: Update):
 
         update.effective_message.reply_text("Contact me in PM to get the list of possible commands.",
                                             reply_markup=InlineKeyboardMarkup(
-                                                [[InlineKeyboardButton(text="[► Help ◄]",url="t.me/{}?start=help".format(bot.username))],  
-                                                [InlineKeyboardButton(text="[► Creator ◄]",url="https://t.me/xflicks")]]))
+                                                [[InlineKeyboardButton(text="[► ʜᴇʟᴘ ◄]",url="t.me/{}?start=help".format(bot.username))],  
+                                                [InlineKeyboardButton(text="[► ᴄʀᴇᴀᴛᴏʀ ◄]",url="https://t.me/jjorvaxeskopeace")]]))
         return
 
     elif len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
