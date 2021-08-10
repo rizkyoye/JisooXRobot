@@ -52,12 +52,12 @@ async def fetch(url):
         return
 
 
-kaneki_chats = []
+JisooX_chats = []
 en_chats = []
 # AI Chat (C) 2020-2021 by @InukaAsith
 
 
-@kaneki.on_message(
+@JisooX.on_message(
     filters.command("chatbot") & ~filters.edited & ~filters.bot & ~filters.private
 )
 @admins_only
@@ -74,7 +74,7 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("`Kaneki AI Already Activated In This Chat`")
+            await lel.edit("`Vaxz AI Already Activated In This Chat`")
             return
         await lel.edit(
             f"`Kaneki AI Successfully Added For Users In The Chat` `{message.chat.id}`"
@@ -103,7 +103,7 @@ async def hmm(_, message):
         )
 
 
-@kaneki.on_message(
+@JisooX.on_message(
     filters.text
     & filters.reply
     & ~filters.bot
@@ -129,13 +129,13 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("Kaneki", "Aco")
-        test = test.replace("Kaneki", "Aco")
+        test = test.replace("JisooX", "Aco")
+        test = test.replace("JisooX", "Aco")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "Kaneki")
-        response = response.replace("aco", "Kaneki")
+        response = response.replace("Aco", "JisooX")
+        response = response.replace("aco", "JisooX")
 
         pro = response
         try:
@@ -187,15 +187,15 @@ async def hmm(client, message):
                 return
         # test = emoji.demojize(test.strip())
 
-        test = test.replace("Kaneki", "Aco")
-        test = test.replace("Kaneki", "Aco")
+        test = test.replace("JisooX", "Aco")
+        test = test.replace("JisooX", "Aco")
         response = await lunaQuery(
             test, message.from_user.id if message.from_user else 0
         )
-        response = response.replace("Aco", "Kaneki")
-        response = response.replace("aco", "Kaneki")
-        response = response.replace("Luna", "Kaneki")
-        response = response.replace("luna", "Kaneki")
+        response = response.replace("Aco", "JisooX")
+        response = response.replace("aco", "JisooX")
+        response = response.replace("Luna", "JisooX")
+        response = response.replace("luna", "JisooX")
         pro = response
         if not "en" in lan and not lan == "":
             try:
@@ -210,7 +210,7 @@ async def hmm(client, message):
             return
 
 
-@kaneki.on_message(
+@JisooX.on_message(
     filters.text & filters.private & ~filters.edited & filters.reply & ~filters.bot
 )
 async def inuka(client, message):
@@ -261,12 +261,12 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("Kaneki", "Aco")
-    test = test.replace("Kaneki", "Aco")
+    test = test.replace("JisooX", "Aco")
+    test = test.replace("JisooX", "Aco")
 
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Kaneki")
-    response = response.replace("aco", "Kaneki")
+    response = response.replace("Aco", "JisooX")
+    response = response.replace("aco", "JisooX")
 
     pro = response
     if not "en" in lan and not lan == "":
@@ -279,8 +279,8 @@ async def inuka(client, message):
         return
 
 
-@kaneki.on_message(
-    filters.regex("Kaneki|kaneki|ken|aku dibuat oleh @rizexx|rizky")
+@JisooX.on_message(
+    filters.regex("vaxz|zel|kontol|memek|woi")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -335,11 +335,11 @@ async def inuka(client, message):
 
     # test = emoji.demojize(test.strip())
 
-    test = test.replace("Kaneki", "Aco")
-    test = test.replace("Kaneki", "Aco")
+    test = test.replace("JisooX", "Aco")
+    test = test.replace("JisooX", "Aco")
     response = await lunaQuery(test, message.from_user.id if message.from_user else 0)
-    response = response.replace("Aco", "Kaneki")
-    response = response.replace("aco", "Kaneki")
+    response = response.replace("Aco", "JisooX")
+    response = response.replace("aco", "JisooX")
 
     pro = response
     if not "en" in lan and not lan == "":
