@@ -19,11 +19,11 @@ import re
 import aiohttp
 from googletrans import Translator as google_translator
 from pyrogram import filters
-from KanekiRobot import BOT_ID
-from KanekiRobot.helper_extra.aichat import add_chat, get_session, remove_chat
-from KanekiRobot.pyrogramee.inlinehelper import arq
-from KanekiRobot.pyrogramee.pluginshelper import admins_only, edit_or_reply
-from KanekiRobot.pyrogramee.pyrogram import pbot as kaneki
+from JisooX import BOT_ID
+from JisooX.helper_extra.aichat import add_chat, get_session, remove_chat
+from JisooX.pyrogramee.inlinehelper import arq
+from JisooX.pyrogramee.pluginshelper import admins_only, edit_or_reply
+from JisooX.pyrogramee.pyrogram import pbot as kaneki
 
 translator = google_translator()
 
