@@ -69,3 +69,7 @@ PyDictionary==2.0.1
 pymongo
 motor
 dnspython
+googletrans==4.0.0-rc1
+pykeyboard
+httpx[http2]
+gpytranslate
